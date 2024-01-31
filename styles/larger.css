@@ -1,0 +1,16 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+
+    /* larger */
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
