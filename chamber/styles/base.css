@@ -1,0 +1,52 @@
+:root {
+    --orange: #ff7b00; /* Orange */
+    --grey-dark: #444444; /* Dark Grey */
+    --grey-light: #CCCCCC; /* Light Grey */
+}
+.card {
+    border: #444444;
+    border-style: inset;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    /* This maintains the aspect ratio */
+    max-height: 360px;
+    /* Example: Set a maximum height */
+}
+
+.join-us-button {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(222, 144, 0); /* Adjust button styles as needed */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+h1 {
+    color: var(--orange);
+}
+
+.button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Example usage */
+.section {
+    border-bottom: 2px solid var(--grey-dark);
+}
