@@ -1,16 +1,42 @@
 /* larger.css */
-
-@media (min-width: 768px) {
+/* 40em = 640px */
+@media (min-width: 40em) {
 
     /* larger */
-
+/* use with base.css
     nav ul {
         flex-direction: row;
     }
-
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    } */
+    /* hide hamburger menu when larger */
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    nav {
+        margin: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
 }
