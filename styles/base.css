@@ -54,6 +54,8 @@ main h2 {
 .card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    background-color: navy;
+    color: white;
 }
 
 .card ul {
@@ -81,13 +83,17 @@ main h2 {
 	margin: 10px auto;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
+	height: auto;
+    width: 100%;
+    min-width: 240px;
+    max-width: 720px;
+    max-height: 384px;
 }
 
 .hero img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit:cover;
 }
 
 .herolabel {
@@ -111,9 +117,15 @@ main h2 {
 }
 
 
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
-
-
+p {
+	margin: 1rem;
+}
 
 /* Footer */
 footer {

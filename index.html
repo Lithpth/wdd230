@@ -43,7 +43,8 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="images/Mesa_Temple1.webp" alt="Mesa Temple">
+                <source srcset="images/Mesa_Temple1.webp" media="(min-width: 640px)">
+                <img src="images/Mesa_Temple1_wide.webp" alt="Mesa Temple">
             </picture>
             <div class="herolabel">
                 <p>Mesa Arizona Temple</p>
@@ -53,24 +54,24 @@
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
+                <li><a>Week 1</a></li>
+                <li><a>Week 2</a></li>
+                <li><a>Week 3</a></li>
+                <li><a>Week 4</a></li>
+                <li><a>Week 5</a></li>
             </ul>
         </section>
-        <h2>Another section</h2> 
+        <!-- <h2>Another section</h2>  -->
         <!-- remove above h2 later -->
         <section class="card">
             <h3>Information</h3>
 
             <p>Weather: </p>
-            <p>Number of visits: </p>
+            <p><span class="label">Number of visits: </span><span class="visits"></span></p>
         </section>
         <!-- random link -->
         <img src="#" alt="1">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31709.894300433105!2d-122.41941513621086!3d37.77492940868078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d4c7db5d3b%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1644242462767!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31709.894300433105!2d-122.41941513621086!3d37.77492940868078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580d4c7db5d3b%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1644242462767!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </main>
 
     
@@ -83,7 +84,9 @@
     </footer>
     
     <script src="scripts/hamburger.js"></script>  
+    <script src="scripts/getvisits.js"></script>
     <script src="scripts/getdates.js"></script>
     <!-- placeholder -->
 </body>
+
 </html>
