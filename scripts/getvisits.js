@@ -1,4 +1,3 @@
-    <script src="scripts/getdates.js"></script>
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");
 
