@@ -39,4 +39,20 @@
         display: block;
         flex: 1 1 100%;
     }
+    /* discover */
+    .container {
+        grid-template-columns: repeat(3,1fr);
+
+
+    }
+    .discover {
+        grid-template-columns: repeat(3,1fr);
+
+
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+    }
 }

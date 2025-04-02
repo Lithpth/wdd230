@@ -110,6 +110,35 @@ main h2 {
 	font-family:"Great Vibes", serif;
 }
 
+/* discover */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 20px;
+    gap: 20px;
+}
+.sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.gallery_image img {
+    border-radius: 8px;
+}
+.gallery_image figcaption {
+    text-align: center;
+    
+}
 
 
 
@@ -125,6 +154,6 @@ footer {
 }
 
 footer p {
-    margin-top: auto;
+    margin-bottom: 0;
     
 }
