@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Mesa Chamber of Commerce and discover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="author" content="A Nuge">
+    <meta name="description" content="A Nuge WDD 230 - Web Frontend Development this is the chamber Join Page">
+    <meta property="og:url" content="https://www.churchofjesuschrist.org/study/scriptures">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A Nuge - WDD 230 - Web Frontend Development Chamber Join Page">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Chamber of Commerce Discovery</h1>
+    </header>
+    <button type="button" id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="/chamber/discover.html" class="active">Discover</a></li>
+            <li><a href="/chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">Join</a></li>
+            <li><a href="/chamber/index.html" target="_blank">About Us</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <!-- script? -->
+
+    <div class="container">
+        <!-- <aside class="sidebar">
+            <h2>Discovery Information</h2>
+
+            <ul>
+                <li>Look at the temple</li>
+                <li>Information 2</li>
+                <li>Information 3</li>
+                <li>Information 4</li>
+            </ul>
+            <h3>This page was last modified:</h3>
+            <p id="lastModified"></p>
+
+        </aside> -->
+        <form method="get" action="thankyou.html">
+            <label for="firstName">
+                First Name:
+                <input type="text" name="firstName" id="firstName" required>
+            </label>
+            <label for="lastName">
+                Last Name:
+                <input type="text" name="lastName" id="lastName" required>
+            </label>
+
+            <label for="position">
+                Title or Position:
+                <input type="text" name="position" id="position" pattern="[A-Za-z\s\-]{7,}" title="Min 7 characters.">
+            </label>
+
+            <label for="email">
+                Email Address:
+                <input type="email" name="email" id="email" required placeholder="example@example.com">
+            </label>
+
+            <label for="phone">
+                Mobile Phone:
+                <input type="tel" name="phone" id="phone" required>
+            </label>
+
+            <label for="organization">
+                Business or Organization Name:
+                <input type="text" name="organization" id="organization" required>
+            </label>
+
+            <label for="membership">
+                Membership Level:
+                <select name="membership" id="membership" required>
+                    <option value="">Select a level</option>
+                    <option value="np">NP Membership (Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">
+                Business/Organization's Description:
+                <textarea name="description" id="description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <!-- submit -->
+            <input type="submit" value="Submit Application">
+        </form>
+        <aside class="sidebar">
+            <h2>Benefits</h2>
+
+            <ul>
+                <li><strong>NP Member: </strong>Free basic access</li>
+                <li><strong>Bronze Member: </strong>10% discount + 1 free ad</li>
+                <li><strong>Silver Member: </strong>20% discount + 2 free ads + 2 gimmes a month</li>
+                <li><strong>Golden Member: </strong>40% discount + all Premium benefits + Party</li>
+            </ul>
+            <!-- <h3>This page was last modified:</h3>
+            <p id="lastModified"></p> -->
+
+        </aside>
+        <img src="/images/Mesa_Temple1.webp" alt="Mesa Temple">
+        </main>
+    </div>
+    <script>document.getElementById("timestamp").textContent = new Date().getMinutes;</script>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> A Nuge
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>
